@@ -241,6 +241,11 @@
     align-items: center;
 }
 
+.footer div iframe  {
+    width: 220px;
+    height: 120px;
+}
+
 .footer div {
     text-align: center;
     margin-bottom: 5px;
@@ -248,6 +253,10 @@
 
 .footer ul {
     list-style-type: none;
+}
+
+.footer ul {
+    margin-left: 5px;
 }
 
 .footer ul li a {
@@ -290,9 +299,24 @@
 
     }
 
+    .header nav ul li {
+        margin: 2px;
+    
+    }
+
     .main section .seccionProductos {
         justify-content: space-evenly;
         padding: 10px;
+
+    }
+
+    .main .seccionNosotros p {
+        text-align: center;
+
+    }
+
+    .main .nuestraMision p {
+        text-align: center;
 
     }
 
@@ -307,6 +331,11 @@
         text-align: center;
         margin-bottom: 5px;
         
+    }
+
+    .footer div iframe  {
+        width: 170px;
+        height: 100px;
     }
 
     .footer ul {
@@ -326,11 +355,6 @@
     .header div img {
         width: 250px; 
         height: 150px;
-    }
-
-    .header nav ul li {
-        margin: 2px;
-    
     }
     
     .header nav ul li a {
