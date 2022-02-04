@@ -1,0 +1,341 @@
+/* --------------------------RESET ESPACIOS----------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------HEADER/NAV----------------- */
+.header {
+    background-color: #ADFFF5;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.header div {
+    display: flex; 
+    align-items: center;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header nav ul li {
+    margin-left: 20px; 
+    margin-right:40px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color:#481620;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.header nav ul li a:hover {
+    color: #F79F79;
+}
+
+/* ------------------------------MAIN-INDEX--------------------------- */
+.main {
+/*     height: 100vh; */
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(../multimedia/imagenes/Background1.jpg) ;
+    background-size: cover;
+}
+
+.main section h2 {
+    text-align: center;
+    color: #481620;
+    background-color: #F79F79;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: sans-serif;
+    
+}
+.main section .seccionProductos div {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.main section .seccionProductos {
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.main section .seccionProductos p {
+    color: #481620;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+.main .seccionNosotros {
+    min-height: 150px;
+    width: 100%;
+}
+
+.main .seccionNosotros p {
+    color: #481620;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    
+    
+}
+
+.main section .nuestraMision {
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+/*     padding: 10px */;
+}
+
+.main section .nuestraMision p {
+    color: #481620;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    
+    
+}
+
+.main .secMis img {
+    padding-top: 15px;
+}
+
+/* ----------------------------MAIN-PRODUCTOS------------------------ */
+.main section .productos div {
+    height: 400px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.main section .productos {
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.main section .productos div h3 {
+    color: #481620;
+    font-size: 30px;
+}
+
+.main section .productos div p {
+    color: #481620;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ----------------------------MAIN-CONTACTO------------------------ */
+.mainContac {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(../multimedia/imagenes/Background1.jpg) ;
+    background-size: cover;
+}
+
+.mainContac section h2 {
+    text-align: center;
+    color: #481620;
+    background-color: #F79F79;  
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.mainContac section .form {
+    height: 600px;
+    width: 450px;
+    border: 2px solid #00ffe1;
+    padding: 40px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background: #ADFFF5;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.mainContac section .form h3 {
+    font-size: 30px;
+    color:#481620;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mainContac section .form .entrada {
+    width: 100%;
+    background: #bce9e4;
+    border: 2px solid #F79F79;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.mainContac section .form .entrada2 {
+    width: 100%;
+    height: 200px;
+    background: #bce9e4;
+    padding: 10px;
+    border: 2px solid #F79F79;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.mainContac section .form .accion {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+.mainContac section .form .accion .boton {
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    background:#F79F79;
+    color: #481620;
+    font-size: 15px;
+}
+
+/* ----------------------------MAIN-PREGUNTAS------------------------ */
+.main .preguntas {
+    height: 100vh;
+    width: 100%;
+}
+
+.main .preguntas div{
+    height: 300px;
+    width: 100%;
+    
+}
+
+.main .preguntas div p{
+    color: #481620;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+/* ------------------------------FOOTER--------------------------- */
+.footer {
+    background-color: #ADFFF5;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.footer div {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color:#481620;
+    font-size: 18px;
+}
+
+.footer div h3 {
+    color: #481620;
+    
+}
+
+
+/* ------------------------------------------------------------- */
+/* ---------------------Media Queries-------------------------- */
+/* ------------------------------------------------------------- */
+@media only screen and (max-width: 1280px) {
+    .header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header div img {
+        width: 320px; 
+        height: 180px;
+    }
+    
+    .header nav ul li a {
+        font-size: 20px;
+
+    }
+
+    .main section .seccionProductos {
+        justify-content: space-evenly;
+        padding: 10px;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .footer div {
+        text-align: center;
+        margin-bottom: 5px;
+        
+    }
+
+    .footer ul {
+        order: 2;
+        display: flex;
+        margin: 15px;
+    }
+    
+    .footer ul li a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .header div img {
+        width: 250px; 
+        height: 150px;
+    }
+
+    .header nav ul li {
+        margin: 2px;
+    
+    }
+    
+    .header nav ul li a {
+        font-size: 15px;
+
+    }
+
+}
