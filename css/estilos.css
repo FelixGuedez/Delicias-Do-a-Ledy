@@ -4,9 +4,11 @@
     padding: 0;
 }
 
-.container {  display: grid;
+/* --------------------------GRID BODY----------------- */
+
+.body {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -15,12 +17,9 @@
         "footer";
 }
 
-.header { grid-area: header; }
-.main { grid-area: main; }
-.footer { grid-area: footer; }
-
 /* ------------------------------HEADER/NAV----------------- */
 .header {
+    grid-area: header;
     background-color: #ADFFF5;
     display: flex;
     justify-content: space-between  ;
@@ -30,6 +29,11 @@
 .header div {
     display: flex; 
     align-items: center;
+}
+
+.header div img {
+    width: 420px; 
+    height: 180px;
 }
 
 .header nav ul {
@@ -56,6 +60,7 @@
 
 /* ------------------------------MAIN-INDEX--------------------------- */
 .main {
+    grid-area: main;
 /*     height: 100vh; */
     width: 100%;
     background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(../multimedia/imagenes/Background1.jpg) ;
@@ -130,29 +135,38 @@
 }
 
 /* ----------------------------MAIN-PRODUCTOS------------------------ */
-.main section .productos div {
-    height: 400px;
-    width: 600px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-
-.main section .productos {
-    min-height: 400px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.main .productos .galeria {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 30px; 
+    grid-template-areas: 
+        "prod1 prod2 prod3"
+        "prod4 prod5 prod6";
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 10px;
+}
+.prod1 { grid-area: prod1; }
+.prod2 { grid-area: prod2; }
+.prod3 { grid-area: prod3; }
+.prod4 { grid-area: prod4; }
+.prod5 { grid-area: prod5; }
+.prod6 { grid-area: prod6; }
+
+.main .productos .galeria .prod img {
+    height: 300px;
+    width: 400px;
 }
 
-.main section .productos div h3 {
+
+.main .productos .galeria .prod h3 {
     color: #481620;
     font-size: 30px;
 }
 
-.main section .productos div p {
+.main .productos .galeria .prod p {
     color: #481620;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -251,6 +265,7 @@
 
 /* ------------------------------FOOTER--------------------------- */
 .footer {
+    grid-area: footer;
     background-color: #ADFFF5;
     display: flex;
     justify-content: space-between  ;
@@ -294,6 +309,21 @@
     .header nav ul li a {
         font-size: 20px;
     }
+
+    .main .productos .galeria {
+        display: grid; 
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 30px; 
+        grid-template-areas: 
+            "prod1 prod2"
+            "prod3 prod4" 
+            "prod5 prod6";
+    }
+    .main .productos .galeria .prod img {
+        height: 200px;
+        width: 300px;
+    }
 }
 
 
@@ -303,6 +333,7 @@
         flex-direction: column;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .header div img {
@@ -334,6 +365,20 @@
     .main .nuestraMision p {
         text-align: center;
 
+    }
+
+    .main .productos .galeria .prod img {
+        height: 150px;
+        width: 300px;
+    }
+
+    .main .productos .galeria .prod p {
+        color: #481620;
+        font-size: 15px;
+    }
+
+    .main .productos .galeria .prod h3 {
+        font-size: 25x;
     }
 
     .footer {
@@ -375,7 +420,19 @@
     
     .header nav ul li a {
         font-size: 15px;
+    }
 
+    .main .productos .galeria {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+        grid-template-areas: 
+            "prod1" 
+            "prod2"
+            "prod3" 
+            "prod4" 
+            "prod5" 
+            "prod6";
     }
 
 }
