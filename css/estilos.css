@@ -118,7 +118,6 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-/*     padding: 10px */;
 }
 
 .main section .nuestraMision p {
@@ -130,8 +129,10 @@
     
 }
 
-.main .secMis img {
-    padding-top: 15px;
+.main .nuestraMision img {
+    width: 200px;
+    height: 200px;
+
 }
 
 /* ----------------------------MAIN-PRODUCTOS------------------------ */
@@ -176,12 +177,19 @@
 /* ----------------------------MAIN-CONTACTO------------------------ */
 .mainContac {
     width: 100%;
-    height: 900px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(../multimedia/imagenes/Background1.jpg) ;
     background-size: cover;
 }
 
+.mainContac section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .mainContac section h2 {
+    width: 100%;
     text-align: center;
     color: #481620;
     background-color: #F79F79;  
@@ -195,8 +203,8 @@
     width: 450px;
     border: 2px solid #00ffe1;
     padding: 40px;
-    margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     background: #ADFFF5;
@@ -246,12 +254,11 @@
 
 /* ----------------------------MAIN-PREGUNTAS------------------------ */
 .main .preguntas {
-    height: 100vh;
     width: 100%;
 }
 
 .main .preguntas div{
-    height: 300px;
+    height: 300px; 
     width: 100%;
     
 }
@@ -338,7 +345,7 @@
 @media only screen and (max-width: 768px) {
     .header div img {
         width: 320px; 
-        height: 180px;
+        height: 160px;
     }
     
     .header nav ul li a {
@@ -351,20 +358,37 @@
     
     }
 
+    .main section h2 {
+        font-size: 25px;
+    }
+
     .main section .seccionProductos {
         justify-content: space-evenly;
         padding: 10px;
 
     }
 
-    .main .seccionNosotros p {
-        text-align: center;
+    .main .seccionProductos div p {
+        text-align:left;
+        font-size: 15px;
 
     }
 
-    .main .nuestraMision p {
-        text-align: center;
+    .main .seccionNosotros p {
+        text-align:left;
+        font-size: 15px;
 
+    }
+
+    .main section .nuestraMision p {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .main section .nuestraMision img {
+        width: 150px;
+        height: 150px;
+    
     }
 
     .main .productos .galeria .prod img {
@@ -379,6 +403,23 @@
 
     .main .productos .galeria .prod h3 {
         font-size: 25x;
+    }
+
+    .main .preguntas div{
+        height: 200px; 
+    }
+
+    .main .preguntas div p{
+        font-size: 15px;
+    }
+
+    .mainContac section h2 {
+        font-size: 25px;
+    }
+
+    .mainContac section .form {
+        height: 500px;
+        width: 300px;
     }
 
     .footer {
@@ -407,19 +448,23 @@
     
     .footer ul li a {
         padding: 5px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
 }
 
 @media only screen and (max-width: 480px) {
     .header div img {
-        width: 250px; 
-        height: 150px;
+        width: 200px; 
+        height: 120px;
     }
     
     .header nav ul li a {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .main section h2 {
+        font-size: 20px;
     }
 
     .main .productos .galeria {
@@ -434,5 +479,24 @@
             "prod5" 
             "prod6";
     }
+
+    .mainContac section h2 {
+        font-size: 20px;
+    }
+
+    .mainContac section .form h3 {
+        font-size: 23px;
+    }
+
+    .mainContac section .form {
+        height: 500px;
+        width: 230px;
+    }
+
+    .mainContac section .form .accion .boton {
+        font-size: 12px;
+    }
+
+
 
 }
