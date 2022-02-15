@@ -213,9 +213,7 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-/*     background: #ADFFF5; */
-    background-image: url(../multimedia/imagenes/background-contact.svg);
-    background-size: cover;
+    background: #ADFFF5;
     box-shadow: 7px 13px 37px #000;
 }
 
