@@ -18,45 +18,28 @@
 }
 
 /* ------------------------------HEADER/NAV----------------- */
-.header {
-    grid-area: header;
-    background-color: #ADFFF5;
-    display: flex;
-    justify-content: space-between  ;
-    align-items: center;
-
+.navbar-dark {
+    background-color: #ADFFF5;  
 }
 
-.header div {
-    display: flex; 
-    align-items: center;
+.navbar-dark .navbar-nav .nav-link {
+    color: #481620;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header div img {
-    width: 420px; 
-    height: 180px;
+.navbar-dark .navbar-toggler {
+    border-color: rgba(48, 16, 20, 0.3);
+    border-radius: 10px;
 }
 
-.header nav ul {
-    list-style: none;
-    display: flex;
-    align-self: center;
-}
-
-.header nav ul li {
-    margin-left: 20px; 
-    margin-right:40px;
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color:#481620;
-    font-size: 25px;
-    font-family: sans-serif;
-}
-
-.header nav ul li a:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
     color: #F79F79;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color:#481620;
 }
 
 /* ------------------------------MAIN-INDEX--------------------------- */
@@ -68,6 +51,16 @@
     background-size: cover;
 }
 
+.main section .secu {
+    width: 100%;
+}
+
+.main section .secu .carousel-inner img {
+    width: 100%;
+    height: 60vh;
+}
+
+
 .main section h2 {
     text-align: center;
     color: #481620;
@@ -77,6 +70,7 @@
     font-family: sans-serif;
     
 }
+
 .main section .seccionProductos div {
     height: 300px;
     width: 300px;
@@ -141,14 +135,14 @@
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 0px 30px; 
+    gap: 20px 30px; 
     grid-template-areas: 
         "prod1 prod2 prod3"
         "prod4 prod5 prod6";
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 .prod1 { grid-area: prod1; }
 .prod2 { grid-area: prod2; }
@@ -157,13 +151,24 @@
 .prod5 { grid-area: prod5; }
 .prod6 { grid-area: prod6; }
 
+.main .productos .galeria .prod {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 3px solid #F79F79;
+    border-radius: 10px;
+    /* padding: 15px; */
+}
+
 .main .productos .galeria .prod img {
-    height: 300px;
-    width: 400px;
+    box-shadow: 15px 5px 10px #F79F79 ;
+    box-shadow: 0px 0px 40px #481620 ;
+    border-radius: 20px;
 }
 
 .main .productos .galeria .prod img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 2s;
 }
 
@@ -177,6 +182,7 @@
     color: #481620;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
 }
 
 
@@ -230,7 +236,7 @@
     border: 2px solid #F79F79;
     padding: 10px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .mainContac section .form .entrada2 {
@@ -250,12 +256,13 @@
 }
 
 .mainContac section .form .accion .boton {
-    width: 20%;
+    width: 30%;
     height: 30px;
     padding: 5px;
     background:#F79F79;
     color: #481620;
     font-size: 15px;
+    text-align: center;
 }
 
 /* ----------------------------MAIN-PREGUNTAS------------------------ */
@@ -273,6 +280,7 @@
     color: #481620;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
     
 }
 
@@ -343,16 +351,16 @@
         display: grid; 
         grid-template-columns: 1fr 1fr ; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 30px; 
+        gap: 20px 30px; 
         grid-template-areas: 
             "prod1 prod2"
             "prod3 prod4" 
             "prod5 prod6";
     }
-    .main .productos .galeria .prod img {
+    /* .main .productos .galeria .prod img {
         height: 200px;
         width: 300px;
-    }
+    } */
 }
 
 
@@ -413,11 +421,6 @@
     
     }
 
-    .main .productos .galeria .prod img {
-        height: 150px;
-        width: 300px;
-    }
-
     .main .productos .galeria .prod p {
         color: #481620;
         font-size: 15px;
@@ -441,8 +444,12 @@
 
     .mainContac section .form {
         height: 500px;
-        width: 300px;
+        width: 400px;
     }
+
+    /* .mainContac section .form .accion .boton {
+        font-size: 12px;
+    } */
 
     .footer {
         flex-direction: column;
@@ -493,6 +500,7 @@
         display: grid; 
         grid-template-columns: 1fr ; 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+        gap: 20px;
         grid-template-areas: 
             "prod1" 
             "prod2"
@@ -512,11 +520,11 @@
 
     .mainContac section .form {
         height: 500px;
-        width: 230px;
+        width: 300px;
     }
 
     .mainContac section .form .accion .boton {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 

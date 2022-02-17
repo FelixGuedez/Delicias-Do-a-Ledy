@@ -6,81 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body class="body">
-    <header class="header" >            <!--Inicio Header-->
-        <div>
-            <a href="index.html"><img src="multimedia/imagenes/Delicias Doña Ledy.png">
-        </div>
-        <nav>           <!--Inicio Barra Navegacion-->
-            <ul>
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="pages/nosotros.html">Nosotros</a> </li>
-                <li> <a href="pages/productos.html">Productos</a> </li>
-                <li> <a href="pages/contacto.html">Contacto</a> </li>
-                <li> <a href="pages/preguntas.html">Preguntas Frecuentes</a> </li>
-            </ul>
-        </nav> 
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../multimedia/imagenes/Delicias Doña Ledy.png" alt="Logo" style="width:200px;">
+            </a>
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="pages/contacto.html">Contato</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="pages/preguntas.html">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main class= "main">             <!--Inicio Seccion Productos-->
+    <main class="main">
+        <!--Inicio Seccion Productos-->
         <section>
-            <h2>Productos</h2>  
-            <div class= "seccionProductos">
-                <div>
-                    <img src="multimedia/imagenes/Suero.jpg " width=300 height=200>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsa qui explicabo eligendi! Ab, aspernatur!</p>
+            <h2>Productos</h2>
+            <div class="secu">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="multimedia/imagenes/Pan.jpg" alt="Pan de Jamon">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/cachitos.jpg" alt="Cachitos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/golfeado.jpg" alt="Golfeado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/pasticho.jpg" alt="Pasticho">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
-                <div>
-                    <img src="multimedia/imagenes/pan.jpeg " width=300 height=200>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsa qui explicabo eligendi! Ab, aspernatur!</p>
-                </div>
-                <div>
-                    <img src="multimedia/imagenes/golfeado.jpg " width=300 height=200>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsa qui explicabo eligendi! Ab, aspernatur!</p>
-                </div> 
             </div>
         </section>
 
-        <section class="seccionNosotros">     <!--Inicio Seccion Nosotros-->
-            <h2>Nosotros</h2>       
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis, quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.</p>
-        </section>                          
-        
-        <section>        <!--Inicio Seccion Nuestra Mision-->   
+        <section class="seccionNosotros">
+            <!--Inicio Seccion Nosotros-->
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur
+                necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis,
+                quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet
+                veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.</p>
+        </section>
+
+        <section>
+            <!--Inicio Seccion Nuestra Mision-->
             <h2>Nuestra mision</h2>
-            <div class ="nuestraMision">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis, quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.</p>
+            <div class="nuestraMision">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur
+                    necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis,
+                    quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet
+                    veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.
+                </p>
                 <img src="multimedia/imagenes/chef.png">
             </div>
         </section>
     </main>
-    <footer class="footer">    <!--Inicio Footer-->
-    <ul>
-        <li> <a href="index.html">Inicio</a> </li>
-        <li> <a href="pages/nosotros.html">Nosotros</a> </li>
-        <li> <a href="pages/productos.html">Productos</a> </li>
-        <li> <a href="pages/contacto.html">Contacto</a> </li>
-        <li> <a href="pages/preguntas.html">Preguntas Frecuentes</a> </li>
-    </ul>
+    <footer class="footer">
+        <!--Inicio Footer-->
+        <ul>
+            <li> <a href="index.html">Inicio</a> </li>
+            <li> <a href="pages/nosotros.html">Nosotros</a> </li>
+            <li> <a href="pages/productos.html">Productos</a> </li>
+            <li> <a href="pages/contacto.html">Contacto</a> </li>
+            <li> <a href="pages/preguntas.html">Preguntas Frecuentes</a> </li>
+        </ul>
 
 
-    <div>
-        <h3>¿Donde Nos Ubicamos?</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4401.507236299661!2d-72.63003656508756!3d-38.733060068997084!2m3!1f0!2f0!3f0!3m2!1i1024!2i76.u.8!4f13.1!3m3!1m2!1s0x9614d46ad0a4acc7%3A0x9993923e19f6eb2f!2sEl%20Acantilado%2002483%2C%20Temuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1642793948389!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-    <div>
-        <h3>Siguenos en nuestras redes sociales</h3>
-        <div class="redes" >
-            <a href="https://es-la.facebook.com/"><img src=https://icongr.am/entypo/facebook.svg?size=45&color=301014></a>
-            <a href="https://www.instagram.com/"><img src=https://icongr.am/entypo/instagram.svg?size=45&color=301014></a>
-            <a href="https://www.youtube.com/"><img src=https://icongr.am/entypo/youtube.svg?size=45&color=301014></a>
+        <div>
+            <h3>¿Donde Nos Ubicamos?</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4401.507236299661!2d-72.63003656508756!3d-38.733060068997084!2m3!1f0!2f0!3f0!3m2!1i1024!2i76.u.8!4f13.1!3m3!1m2!1s0x9614d46ad0a4acc7%3A0x9993923e19f6eb2f!2sEl%20Acantilado%2002483%2C%20Temuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1642793948389!5m2!1ses-419!2scl"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
-    </div>
+        <div>
+            <h3>Siguenos en nuestras redes sociales</h3>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/"><img
+                        src=https://icongr.am/entypo/facebook.svg?size=45&color=301014></a>
+                <a href="https://www.instagram.com/"><img
+                        src=https://icongr.am/entypo/instagram.svg?size=45&color=301014></a>
+                <a href="https://www.youtube.com/"><img
+                        src=https://icongr.am/entypo/youtube.svg?size=45&color=301014></a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8bbc8888a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
