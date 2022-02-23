@@ -273,6 +273,8 @@
 .main .preguntas div{
     height: 300px; 
     width: 100%;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -357,10 +359,6 @@
             "prod3 prod4" 
             "prod5 prod6";
     }
-    /* .main .productos .galeria .prod img {
-        height: 200px;
-        width: 300px;
-    } */
 }
 
 
@@ -446,10 +444,6 @@
         height: 500px;
         width: 400px;
     }
-
-    /* .mainContac section .form .accion .boton {
-        font-size: 12px;
-    } */
 
     .footer {
         flex-direction: column;
