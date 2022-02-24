@@ -1,0 +1,166 @@
+@media only screen and (max-width: 1280px) {
+    .main {
+        .productos {
+            .galeria {
+                display: grid; 
+                grid-template-columns: 1fr 1fr ; 
+                grid-template-rows: 1fr 1fr 1fr; 
+                gap: 20px 30px; 
+                grid-template-areas: 
+                    "prod1 prod2"
+                    "prod3 prod4" 
+                    "prod5 prod6";
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        div {
+            img {
+                width: 320px; 
+                height: 160px;
+            }
+        }
+    }
+    .main {
+        section {
+            h2 {
+                font-size: 25px;
+            }
+            .seccionProductos {
+                justify-content: space-evenly;
+                padding: 10px;
+            }
+            .nuestraMision {
+                p {
+                    text-align: left;
+                    font-size: 15px;
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+        .seccionNosotros {
+            p {
+                text-align:left;
+                font-size: 15px;
+            }
+        }
+        .productos {
+            .galeria {
+                .prod {
+                    p {
+                        color: $color2;
+                        font-size: 15px;
+                    }
+                    h3 {
+                        font-size: 25x;
+                    }
+                }
+            }
+        }
+        .preguntas {
+            div {
+                height: 200px;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .maicontact {
+        section {
+            h2 {
+                font-size: 25px;
+            }
+            .form {
+                height: 500px;
+                width: 400px;
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div {
+            text-align: center;
+            margin-bottom: 5px;
+            iframe  {
+                width: 170px;
+                height: 100px;
+            }
+            
+        }
+        ul {
+            order: 2;
+            display: flex;
+            margin: 15px;
+            li {
+                a {
+                    padding: 5px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main {
+        section {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .productos {
+            .galeria {
+                display: grid; 
+                grid-template-columns: 1fr ; 
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+                gap: 20px;
+                grid-template-areas: 
+                    "prod1" 
+                    "prod2"
+                    "prod3" 
+                    "prod4" 
+                    "prod5" 
+                    "prod6";
+            }
+        }
+    }
+    .maicontact {
+        section {
+            h2 {
+                font-size: 20px;
+            }
+            .form {
+                height: 500px;
+                width: 300px;
+                h3 {
+                    font-size: 23px;
+                }
+                .accion {
+                    .boton {
+                        font-size: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

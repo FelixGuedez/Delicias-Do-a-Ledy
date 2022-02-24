@@ -1,0 +1,22 @@
+.navbar-dark {
+    background-color: $color1;  
+
+    .navbar-toggler {
+        border-color: rgba(48, 16, 20, 0.3);
+        border-radius: 10px;
+        .fa-bars {
+            font-size: 30px;
+            color: $color2;
+        }
+    }
+
+    .navbar-nav .nav-link {
+        color: $color2;
+        font-size: 18px;
+        font-family: $font1;
+        &:hover {
+            color: $color3;
+        }
+
+    }
+}
