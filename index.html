@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <meta name="description" content="En Delicias Doña Ledy nos encargamos de llevar sabor a tu mesa con ingredientes naturales, en una variedad de platos saludables y exquisitos">
+    <meta name="keywords" content="comida casera, comida sana, ingredientes naturales, salud, sabor, menu, almuerzo">
+    <title>Delicias Doña Ledy</title>
+    <!-- BOOTSTRAPP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -18,12 +24,11 @@
             <a class="navbar-brand" href="#">
                 <img src="multimedia/imagenes/Delicias Doña Ledy.png" alt="Logo" style="width:200px;">
             </a>
-    
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="fa-solid fa-bars"></span>
             </button>
-    
             <!-- Navbar links -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
@@ -37,7 +42,7 @@
                         <a class="nav-link" href="pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item m-3">
-                        <a class="nav-link" href="pages/contacto.html">Contato</a>
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item m-3">
                         <a class="nav-link" href="pages/preguntas.html">Preguntas Frecuentes</a>
@@ -47,35 +52,63 @@
         </nav>
     </header>
     <main class="main">
-        <!--Inicio Seccion Productos-->
         <section class="hero">
-            <h1>Descubre El Sabor Con Ingredientes Naturales</h1>
+            <h1>Descubre El Sabor Con <br> Ingredientes Naturales</h1>
             <a class="button" href="pages/productos.html">Ver mas</a></button>
         </section>
 
-        <section class="seccionNosotros">
+        <section data-aos="fade-right" class="seccionNosotros">
             <!--Inicio Seccion Nosotros-->
             <h2>Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur
-                necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis,
-                quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet
-                veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.</p>
-        </section>
-
-        <section>
-            <!--Inicio Seccion Nuestra Mision-->
-            <h2>Nuestra mision</h2>
-            <div class="nuestraMision">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde? Laudantium, consequatur
-                    necessitatibus fugit vero nemo magni odio asperiores libero, minus esse repellat aliquid reiciendis,
-                    quibusdam id officiis a excepturi sit! Atque exercitationem, saepe ipsam laudantium doloribus amet
-                    veritatis fuga fugiat rerum debitis! Distinctio, consequuntur? Quis unde at exercitationem numquam.
-                </p>
-                <img src="multimedia/imagenes/chef.png">
+            <div class="contenedorNosotros container-fluid">
+                <div class="row">
+                    <div class="imagen col-xs 12 col-sm 6">
+                        <div class="secu">    <!----- Carrousel ----->
+                            <div id="demo" class="carousel slide"       data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                    <li data-target="#demo" data-slide-to="3"></li>
+                                </ul>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="multimedia/imagenes/Pan.jpg" width="100%" height="400px"
+                                            alt="Pan de Jamon">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="multimedia/imagenes/cachitos.jpg" width="100%" height="400px"
+                                            alt="Cachitos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="multimedia/imagenes/golfeado.jpg" width="100%" height="400px"
+                                            alt="Golfeado">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="multimedia/imagenes/pasticho.jpg" width="100%" height="400px"
+                                            alt="Pasticho">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-justify texto col-xs 12 col-sm 6">En Delicias Doña Ledy somos una pequeña empresa casera dirigida por manos venezolanas con experiencia en la preparación de platos de nuestra gastronomía que engalanan las mesas de nuestros comensales en el día a día y fechas especiales .Sus aromas y sabores son la mezcla de ingredientes naturales de la olla a la mesa con esmero, dedicación y amor.
+                    </p>
+                </div>
             </div>
+
         </section>
     </main>
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
         <!--Inicio Footer-->
         <ul>
             <li> <a href="index.html">Inicio</a> </li>
@@ -84,8 +117,6 @@
             <li> <a href="pages/contacto.html">Contacto</a> </li>
             <li> <a href="pages/preguntas.html">Preguntas Frecuentes</a> </li>
         </ul>
-
-
         <div>
             <h3>¿Donde Nos Ubicamos?</h3>
             <iframe
@@ -105,6 +136,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -114,7 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/8bbc8888a9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8bbc8888a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

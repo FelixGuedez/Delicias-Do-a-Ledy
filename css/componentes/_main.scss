@@ -15,9 +15,9 @@
         justify-content: center;
         align-items: center;
             h1{
-                font-size: 70px;
+                font-size: 75px;
                 color: white;
-                font-family: cursive;
+                font-family: 'Great Vibes', cursive;
                 text-shadow: 2px 2px 2px $color3;
                 margin-bottom: 50px;
             }
@@ -39,68 +39,22 @@
     }
     section {
         h2 {
-        text-align: center;
-        color: $color2;
-        background-color: $color3;
-        text-transform: capitalize;
-        font-size: 35px;
-        font-family: $font1;
-        }
-        .secu {
-            width: 100%;
-            .carousel-inner img {
-                width: 100%;
-                height: 60vh;
-            }
-        }
-        .seccionProductos {
-            min-height: 350px;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;   
-            div {
-                height: 300px;
-                width: 300px;
-                text-align: center;
-            }
-            p {
-                color: $color2;
-                font-size: 20px;
-                font-family: $font2;  
-            }
-        }
-        .nuestraMision {
-            min-height: 250px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            p {
-                color: $color2;;
-                font-size: 20px;
-                font-family: $font2;
-                padding: 5px;
-            }
-            img {
-                width: 200px;
-                height: 200px;
-            
-            }
+        @extend %tituloH2;
         }
 
-    
     }
     .seccionNosotros {
-        min-height: 150px;
-        width: 100%;
-        p {
-            color: $color2;;
-            font-size: 20px;
-            font-family: $font2; 
-            padding: 5px;
+        .contenedorNosotros {
+            .row {
+                .imagen {
+                    margin: 10px
+                }
+                .texto {
+                    @extend %parrafo;
+                    margin: auto;
+                    padding: 15px;
+                }
+            }
         }
     }
 }
@@ -127,26 +81,21 @@
             .prod5 { grid-area: prod5; }
             .prod6 { grid-area: prod6; }
             .prod {
-                height: 505px;
+                height: 500px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 border: 3px solid $color3;;
                 border-radius: 10px;
                 box-shadow: 15px 5px 10px $color3; 
                 box-shadow: 0px 0px 40px $color2;
                 img {
-                    // box-shadow: 15px 5px 10px $color3; 
-                    // box-shadow: 0px 0px 40px $color2; 
                     border-radius: 20px;
                     &:hover {
                         transform: scale(1.05);
                         transition: 2s;
                     }
                 }
-            }
-            .prod {
                 h3 {
                     margin-top: 10px;
                     color: $color2;
@@ -163,6 +112,29 @@
     }
 }
 
+/* ----------------------------MAIN-NOSOTROS--------------------------------------- */
+
+.main {
+    section {
+        .nosotros {
+            p{
+            @extend %parrafo;
+            }
+        }
+        .nuestraMision {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                @extend %parrafo;
+            }
+            img {
+                @include sizes (200px, 200px);
+            }
+        }
+    } 
+}  
+
 /* ----------------------------MAIN-CONTACTO--------------------------------------- */
 .mainContac {
     width: 100%;
@@ -174,17 +146,10 @@
         justify-content: center;
         align-items: center;
         h2 {
-            width: 100%;
-            text-align: center;
-            color: $color2;
-            background-color: $color3;;  
-            text-transform: capitalize;
-            font-size: 35px;
-            font-family: sans-serif;
+            @extend %tituloH2;
         }
         .form {
-            height: 600px;
-            width: 450px;
+            @include sizes (450px, 600px);
             border: 2px solid #00ffe1;
             padding: 40px;
             margin-top: 50px;
@@ -208,8 +173,7 @@
                 margin-bottom: 20px; 
             }
             .entrada2 {
-                width: 100%;
-                height: 200px;
+                @include sizes (100%, 200px);
                 background: #bce9e4;
                 padding: 10px;
                 border: 2px solid $color3;
@@ -221,8 +185,7 @@
                 justify-content: space-between;
                 align-content: flex-end;
                 .boton {
-                    width: 30%;
-                    height: 30px;
+                    @include sizes (30%, 30px);
                     padding: 5px;
                     background:$color3;
                     color: $color2;
@@ -239,16 +202,14 @@
     .preguntas {
         width: 100%;
             div{
+                @include sizes (100%, 300px);
                 height: 300px; 
                 width: 100%;
                 display: flex;
                 flex-direction: column;
             p{
-                color: $color2;
-                font-size: 20px;
-                font-family: $font2;
-                padding: 10px;
-            }
+                @extend %parrafo;
         } 
     }
+}
 }

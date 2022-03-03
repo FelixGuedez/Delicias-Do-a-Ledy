@@ -1,5 +1,10 @@
 .navbar-dark {
-    background-color: $color1;  
+    background-color: $color1; 
+    .navbar-brand {
+        img {
+            margin-left: 100px;
+        }
+    }
 
     .navbar-toggler {
         border-color: rgba(48, 16, 20, 0.3);
@@ -12,7 +17,7 @@
 
     .navbar-nav .nav-link {
         color: $color2;
-        font-size: 18px;
+        font-size: 20px;
         font-family: $font1;
         &:hover {
             color: $color3;
