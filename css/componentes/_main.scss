@@ -151,18 +151,10 @@
     }
 }
 
-/* ----------------------------MAIN-NOSOTROS--------------------------------------- */
+/* /* ----------------------------MAIN-NOSOTROS--------------------------------------- */
 
 .main {
     section {
-        display: flex;
-
-        .imagenNosotros {
-            width: 100px;
-            height: 800px;
-
-
-        }
         .nosotros {
             p{
             @extend %parrafo;

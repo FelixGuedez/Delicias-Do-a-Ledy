@@ -366,18 +366,7 @@
   padding: 15px;
 }
 
-/* ----------------------------MAIN-NOSOTROS--------------------------------------- */
-.main section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main section .imagenNosotros {
-  width: 100px;
-  height: 800px;
-}
-
+/* /* ----------------------------MAIN-NOSOTROS--------------------------------------- */
 .main section .nuestraMision {
   display: -webkit-box;
   display: -ms-flexbox;
