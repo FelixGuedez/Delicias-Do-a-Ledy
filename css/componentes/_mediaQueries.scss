@@ -1,20 +1,16 @@
 @media only screen and (max-width: 1280px) {
     .main {
-        // .hero {
-        //     h1 {
-        //         font-size: 50px
-        //     }
-        // }
         .productos {
             .galeria {
                 display: grid; 
-                grid-template-columns: 1fr 1fr ; 
-                grid-template-rows: 1fr 1fr 1fr; 
-                gap: 20px 30px; 
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
                 grid-template-areas: 
                     "prod1 prod2"
                     "prod3 prod4" 
-                    "prod5 prod6";
+                    "prod5 prod6"
+                    "prod7 prod8"
+                    "prod9";
             }
         }
     }
@@ -159,7 +155,7 @@
             .galeria {
                 display: grid; 
                 grid-template-columns: 1fr ; 
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
                 gap: 20px;
                 grid-template-areas: 
                     "prod1" 
@@ -167,7 +163,10 @@
                     "prod3" 
                     "prod4" 
                     "prod5" 
-                    "prod6";
+                    "prod6"
+                    "prod7"
+                    "prod8"
+                    "prod9";
             }
         }
     }
@@ -191,14 +190,4 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
 }

@@ -57,6 +57,41 @@
             }
         }
     }
+    .recomendaciones {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) ;
+        background-size: cover;
+        background-position: center;
+        .tarjetaRecomendacion {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .tarjeta {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 3px solid $color3;
+                border-radius: 10px;
+                box-shadow: 15px 5px 10px $color3; 
+                box-shadow: 0px 0px 40px $color2;
+                margin-top: 10px;
+                h3 {
+                    font-size: 27px;
+                }
+                img {
+                    margin-top: 25px
+                }
+                    p{
+                        @extend %parrafo;
+                        font-family: 'Abel', sans-serif;
+                        margin-top: 25px;
+                    }
+            }
+            
+        }
+    }
 }
 
 /* ----------------------------MAIN-PRODUCTOS-------------------------------------- */
@@ -65,11 +100,12 @@
         .galeria {
             display: grid; 
             grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
             gap: 20px 30px; 
             grid-template-areas: 
                 "prod1 prod2 prod3"
-                "prod4 prod5 prod6";
+                "prod4 prod5 prod6"
+                "prod7 prod8 prod9";
             justify-content: space-between;
             align-items: center;
             text-align: center;
@@ -80,6 +116,9 @@
             .prod4 { grid-area: prod4; }
             .prod5 { grid-area: prod5; }
             .prod6 { grid-area: prod6; }
+            .prod7 { grid-area: prod7; }
+            .prod8 { grid-area: prod8; }
+            .prod9 { grid-area: prod9; }
             .prod {
                 height: 500px;
                 display: flex;
@@ -116,6 +155,14 @@
 
 .main {
     section {
+        display: flex;
+
+        .imagenNosotros {
+            width: 100px;
+            height: 800px;
+
+
+        }
         .nosotros {
             p{
             @extend %parrafo;

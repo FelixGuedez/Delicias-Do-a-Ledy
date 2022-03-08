@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Great+Vibes&family=Indie+Flower&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@
       grid-template-areas: "header" "main" "footer";
 }
 
-.main .seccionNosotros .contenedorNosotros .row .texto, .main section .nosotros p, .main section .nuestraMision p, .main .preguntas div p {
+.main .seccionNosotros .contenedorNosotros .row .texto, .main .recomendaciones .tarjetaRecomendacion .tarjeta p, .main section .nosotros p, .main section .nuestraMision p, .main .preguntas div p {
   color: #481620;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -191,16 +192,72 @@
   padding: 15px;
 }
 
+.main .recomendaciones {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.main .recomendaciones .tarjetaRecomendacion {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .recomendaciones .tarjetaRecomendacion .tarjeta {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #F79F79;
+  border-radius: 10px;
+  -webkit-box-shadow: 15px 5px 10px #F79F79;
+          box-shadow: 15px 5px 10px #F79F79;
+  -webkit-box-shadow: 0px 0px 40px #481620;
+          box-shadow: 0px 0px 40px #481620;
+  margin-top: 10px;
+}
+
+.main .recomendaciones .tarjetaRecomendacion .tarjeta h3 {
+  font-size: 27px;
+}
+
+.main .recomendaciones .tarjetaRecomendacion .tarjeta img {
+  margin-top: 25px;
+}
+
+.main .recomendaciones .tarjetaRecomendacion .tarjeta p {
+  font-family: 'Abel', sans-serif;
+  margin-top: 25px;
+}
+
 /* ----------------------------MAIN-PRODUCTOS-------------------------------------- */
 .main .productos .galeria {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   gap: 20px 30px;
-      grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6";
+      grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6" "prod7 prod8 prod9";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -245,6 +302,24 @@
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: prod6;
+}
+
+.main .productos .galeria .prod7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: prod7;
+}
+
+.main .productos .galeria .prod8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: prod8;
+}
+
+.main .productos .galeria .prod9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: prod9;
 }
 
 .main .productos .galeria .prod {
@@ -292,6 +367,17 @@
 }
 
 /* ----------------------------MAIN-NOSOTROS--------------------------------------- */
+.main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main section .imagenNosotros {
+  width: 100px;
+  height: 800px;
+}
+
 .main section .nuestraMision {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,10 +511,9 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 30px;
-        grid-template-areas: "prod1 prod2" "prod3 prod4"  "prod5 prod6";
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "prod1 prod2" "prod3 prod4"  "prod5 prod6" "prod7 prod8" "prod9";
   }
 }
 
@@ -551,10 +636,10 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
-        grid-template-areas: "prod1"  "prod2" "prod3"  "prod4"  "prod5"  "prod6";
+        grid-template-areas: "prod1"  "prod2" "prod3"  "prod4"  "prod5"  "prod6" "prod7" "prod8" "prod9";
   }
   .mainContac section h2 {
     font-size: 20px;
