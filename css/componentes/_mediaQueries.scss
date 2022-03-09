@@ -10,7 +10,7 @@
                     "prod3 prod4" 
                     "prod5 prod6"
                     "prod7 prod8"
-                    "prod9";
+                    "prod9 prod10" ;
             }
         }
     }
@@ -76,6 +76,20 @@
                         font-size: 25x;
                     }
                 }
+            }
+        }
+        .containerNosotros {
+            flex-direction: column;
+            flex-wrap: wrap;
+            .imagenNosotros {
+                width: 100%;
+                height: 600px;
+                background-image: url(https://images.pexels.com/photos/4252133/pexels-photo-4252133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+                background-size: cover;
+                background-position: center;
+            }
+            .textoNosotros {
+                width:100%;
             }
         }
         .preguntas {

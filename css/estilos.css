@@ -17,14 +17,14 @@
       grid-template-areas: "header" "main" "footer";
 }
 
-.main .seccionNosotros .contenedorNosotros .row .texto, .main .recomendaciones .tarjetaRecomendacion .tarjeta p, .main section .nosotros p, .main section .nuestraMision p, .main .preguntas div p {
+.main .seccionNosotros .contenedorNosotros .row .texto, .main .recomendaciones .tarjetaRecomendacion .tarjeta p, .main .containerNosotros .nosotros p, .main .containerNosotros .nuestraMision p, .main .preguntas div p {
   color: #481620;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
 }
 
-.main section h2, .mainContac section h2 {
+.main section h2, .main .seccionNosotros h2, .main .recomendaciones h2, .main .productos h2, .main .containerNosotros .textoNosotros h2, .mainContac section h2, .main .preguntas div h2 {
   width: 100%;
   text-align: center;
   color: #481620;
@@ -183,6 +183,16 @@
   color: #F79F79;
 }
 
+.main .seccionNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .main .seccionNosotros .contenedorNosotros .row .imagen {
   margin: 10px;
 }
@@ -193,6 +203,13 @@
 }
 
 .main .recomendaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
@@ -249,13 +266,23 @@
 }
 
 /* ----------------------------MAIN-PRODUCTOS-------------------------------------- */
+.main .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .main .productos .galeria {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 20px 30px;
       grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6" "prod7 prod8 prod9";
   -webkit-box-pack: justify;
@@ -367,7 +394,26 @@
 }
 
 /* /* ----------------------------MAIN-NOSOTROS--------------------------------------- */
-.main section .nuestraMision {
+.main .containerNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .containerNosotros .imagenNosotros {
+  width: 50%;
+  background-image: url(https://images.pexels.com/photos/4252133/pexels-photo-4252133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.main .containerNosotros .textoNosotros {
+  width: 50%;
+}
+
+.main .containerNosotros .nuestraMision {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +426,7 @@
           align-items: center;
 }
 
-.main section .nuestraMision img {
+.main .containerNosotros .nuestraMision img {
   width: 200px;
   height: 200px;
 }
@@ -477,6 +523,13 @@
 
 /* ----------------------------MAIN-PREGUNTAS-------------------------------------- */
 .main .preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -502,7 +555,7 @@
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "prod1 prod2" "prod3 prod4"  "prod5 prod6" "prod7 prod8" "prod9";
+        grid-template-areas: "prod1 prod2" "prod3 prod4"  "prod5 prod6" "prod7 prod8" "prod9 prod10";
   }
 }
 
@@ -552,6 +605,24 @@
   }
   .main .productos .galeria .prod h3 {
     font-size: 25x;
+  }
+  .main .containerNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .containerNosotros .imagenNosotros {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.pexels.com/photos/4252133/pexels-photo-4252133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+  }
+  .main .containerNosotros .textoNosotros {
+    width: 100%;
   }
   .main .preguntas div {
     height: 200px;
