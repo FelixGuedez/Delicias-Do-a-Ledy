@@ -250,6 +250,7 @@
   -webkit-box-shadow: 0px 0px 40px #481620;
           box-shadow: 0px 0px 40px #481620;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .main .recomendaciones .tarjetaRecomendacion .tarjeta h3 {
@@ -262,7 +263,7 @@
 
 .main .recomendaciones .tarjetaRecomendacion .tarjeta p {
   font-family: 'Abel', sans-serif;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 /* ----------------------------MAIN-PRODUCTOS-------------------------------------- */
@@ -413,6 +414,11 @@
   width: 50%;
 }
 
+.main .containerNosotros .nosotros p {
+  margin: auto;
+  padding: 15px;
+}
+
 .main .containerNosotros .nuestraMision {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,6 +430,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main .containerNosotros .nuestraMision p {
+  margin: auto;
+  padding: 15px;
 }
 
 .main .containerNosotros .nuestraMision img {
@@ -536,8 +547,6 @@
 .main .preguntas div {
   width: 100%;
   height: 300px;
-  height: 300px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,6 +554,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main .preguntas div p {
+  padding: 15px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -624,8 +637,8 @@
   .main .containerNosotros .textoNosotros {
     width: 100%;
   }
-  .main .preguntas div {
-    height: 200px;
+  .main .preguntas div h2 {
+    font-size: 30px;
   }
   .main .preguntas div p {
     font-size: 15px;
